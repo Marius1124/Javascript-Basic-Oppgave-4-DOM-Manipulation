@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     hobbyImage.alt = hobby.name;
     hobbyInfo.textContent = hobby.description;
     hobbyChallenge.textContent = hobby.challenge;
-    hobbyCategory.textContent = `Based on your choice of the ${capitalizeFirstLetter(
+    hobbyCategory.textContent = `Based of the ${capitalizeFirstLetter(
       userChoices.interestType
     )} category, we recommend you try the following hobby`;
   }
