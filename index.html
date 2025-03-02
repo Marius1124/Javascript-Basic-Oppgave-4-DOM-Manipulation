@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Your Hobby!</title>
+    <!-- link to css and javascript -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Intro Section -->
+    <div id="intro">
+      <h1>Find Your Hobby</h1>
+      <p>
+        Take a quiz and get a random hobby suggestion based on your preferences.
+      </p>
+      <button id="find-hobby-btn">Find Your Hobby!</button>
+
+      <!-- Footer in Intro to attribute icons & display copyright -->
+      <footer>
+        <div class="footer-wrapper">
+          <p>&#xA9; Copyright Marius1124</p>
+          <a href="https://www.freepik.com/search" target="_blank"
+            >Icons Designed by Freepik</a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <!-- Quiz Section (Initially Hidden) -->
+    <div id="quiz" style="display: none">
+      <!-- Back to intro button -->
+      <button id="back-to-intro">← Back to Intro</button>
+      <div id="question-container">
+        <p id="question-text">
+          What kind of hobby activity do you want to engage in?
+        </p>
+        <div class="button-wrapper">
+          <button class="choice" data-value="creative" data-color="#FF6347">
+            Creative <img src="./icons/creative.png" alt="a painting board" />
+          </button>
+          <button class="choice" data-value="athletic" data-color="#00BFFF">
+            Athletic <img src="./icons/athletic.png" alt="a man running" />
+          </button>
+          <button class="choice" data-value="intellectual" data-color="#6A5ACD">
+            Intellectual
+            <img src="./icons/intellectual.png" alt="a thinking person" />
+          </button>
+          <button class="choice" data-value="relaxing" data-color="#66CDAA">
+            Relaxing
+            <img src="./icons/relaxing.png" alt="a meditating lady icon" />
+          </button>
+        </div>
+        <!-- Pick for me button -->
+        <button id="pick-for-me">
+          Pick for Me
+          <img src="./icons/pickforme.png" alt="random icon" />
+        </button>
+      </div>
+    </div>
+
+    <!-- Result Section (Initially Hidden) -->
+    <div id="result" style="display: none">
+      <p id="hobby-category"></p>
+      <h2>Your Suggested Hobby:</h2>
+      <h3 id="hobby-name"></h3>
+      <img id="hobby-image" src="" alt="Hobby Image" />
+      <p id="hobby-info"></p>
+      <p id="hobby-challenge"></p>
+      <button id="back-to-quiz">Try Again</button>
+    </div>
+  </body>
+</html>

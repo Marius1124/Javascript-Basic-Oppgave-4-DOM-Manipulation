@@ -1,0 +1,289 @@
+/* Default styling is made for mobile first */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  background-image: url("./images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 10px;
+}
+
+/* Main heading (h1, h2, h3) */
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+/* Paragraph text */
+p {
+  font-family: "lora", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Removing default anchor tag styling */
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Anchor tag styling */
+a {
+  color: #2f4f4f;
+  font-style: none;
+}
+
+a:hover {
+  color: #264646;
+  transition: 2s;
+}
+
+/* Wraps the footer content to align it the way I want */
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+/* Default styling for all the sections */
+#intro,
+#quiz,
+#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #2f3f3f;
+  width: 85%;
+  max-width: 350px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #264242;
+}
+
+/* Default button styling and button size adjustments */
+button {
+  font-size: 0.4em;
+  padding: 5px 8px;
+  margin: 3px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+  width: 12px;
+  margin-left: 5px;
+}
+
+button.choice {
+  margin: 2px auto;
+  min-width: 60px;
+  font-size: 0.4em;
+  padding: 3px 5px;
+}
+
+button#pick-for-me {
+  margin: 5px auto;
+}
+
+/* Unique colors for the back to intro, back to quiz and pick for me buttons */
+#back-to-intro {
+  background-color: #a50000;
+}
+
+#back-to-quiz {
+  background-color: #008cba;
+}
+
+#pick-for-me {
+  background-color: #e4a700;
+}
+
+#hobby-image {
+  width: 70%;
+  max-width: 160px;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Text styling for all the pages making sure the font size isn't too large */
+p#hobby-info,
+p#hobby-challenge {
+  width: 70%;
+  padding: 2px;
+  font-size: 0.3em;
+}
+
+p#hobby-category {
+  font-size: 0.4em;
+}
+
+h1,
+h2 {
+  font-size: 0.5em;
+}
+
+p,
+h3#hobby-name {
+  font-size: 0.4em;
+}
+
+footer a,
+p {
+  font-size: 0.3em;
+}
+
+/* Styling for tablet screens 768px */
+@media (min-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  .footer-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Ensures max-width and width to keep size good for semi large screens */
+  #intro,
+  #quiz,
+  #result {
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  /* Text styling for all the pages making sure the font size is proper */
+  p#hobby-info,
+  p#hobby-challenge {
+    width: 70%;
+    padding: 5px;
+    font-size: 0.7em;
+  }
+
+  p#hobby-category {
+    font-size: 0.8em;
+  }
+
+  h1,
+  h2 {
+    font-size: 1em;
+  }
+
+  p,
+  h3#hobby-name {
+    font-size: 0.8em;
+  }
+
+  footer a,
+  p {
+    font-size: 0.6em;
+  }
+
+  #hobby-image {
+    width: 180px;
+  }
+
+  .button-wrapper {
+    display: flex;
+  }
+
+  button.choice {
+    margin: 1px;
+  }
+}
+
+/* LARGER SCREEN */
+@media (min-width: 1200px) {
+  body {
+    padding: 50px;
+  }
+
+  #intro,
+  #quiz,
+  #result {
+    width: 70%;
+    max-width: 800px;
+    padding: 50px;
+  }
+
+  p#hobby-info,
+  p#hobby-challenge {
+    width: 60%;
+    padding: 10px;
+    font-size: 1.1em;
+  }
+
+  p#hobby-category {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4em;
+  }
+
+  p,
+  h3#hobby-name {
+    font-size: 1.4em;
+  }
+
+  footer a,
+  p {
+    font-size: 1.1em;
+  }
+
+  /* Button size, layout and padding for larger screens */
+  .button-wrapper {
+    display: flex;
+  }
+
+  button#pick-for-me {
+    margin: 20px auto;
+  }
+
+  button {
+    font-size: 1.2em;
+    padding: 15px 30px;
+  }
+
+  button.choice {
+    font-size: 1.2em;
+    padding: 15px 30px;
+    margin: 3px;
+  }
+
+  button img {
+    width: 28px;
+  }
+
+  #hobby-image {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+}
